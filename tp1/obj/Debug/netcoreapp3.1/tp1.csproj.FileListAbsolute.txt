@@ -1,0 +1,14 @@
+C:\TallerII\tl2-tp1-2022-RUIZROCK\tp1\bin\Debug\netcoreapp3.1\tp1.exe
+C:\TallerII\tl2-tp1-2022-RUIZROCK\tp1\bin\Debug\netcoreapp3.1\tp1.deps.json
+C:\TallerII\tl2-tp1-2022-RUIZROCK\tp1\bin\Debug\netcoreapp3.1\tp1.runtimeconfig.json
+C:\TallerII\tl2-tp1-2022-RUIZROCK\tp1\bin\Debug\netcoreapp3.1\tp1.runtimeconfig.dev.json
+C:\TallerII\tl2-tp1-2022-RUIZROCK\tp1\bin\Debug\netcoreapp3.1\tp1.dll
+C:\TallerII\tl2-tp1-2022-RUIZROCK\tp1\bin\Debug\netcoreapp3.1\tp1.pdb
+C:\TallerII\tl2-tp1-2022-RUIZROCK\tp1\obj\Debug\netcoreapp3.1\tp1.csproj.AssemblyReference.cache
+C:\TallerII\tl2-tp1-2022-RUIZROCK\tp1\obj\Debug\netcoreapp3.1\tp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\TallerII\tl2-tp1-2022-RUIZROCK\tp1\obj\Debug\netcoreapp3.1\tp1.AssemblyInfoInputs.cache
+C:\TallerII\tl2-tp1-2022-RUIZROCK\tp1\obj\Debug\netcoreapp3.1\tp1.AssemblyInfo.cs
+C:\TallerII\tl2-tp1-2022-RUIZROCK\tp1\obj\Debug\netcoreapp3.1\tp1.csproj.CoreCompileInputs.cache
+C:\TallerII\tl2-tp1-2022-RUIZROCK\tp1\obj\Debug\netcoreapp3.1\tp1.dll
+C:\TallerII\tl2-tp1-2022-RUIZROCK\tp1\obj\Debug\netcoreapp3.1\tp1.pdb
+C:\TallerII\tl2-tp1-2022-RUIZROCK\tp1\obj\Debug\netcoreapp3.1\tp1.genruntimeconfig.cache
