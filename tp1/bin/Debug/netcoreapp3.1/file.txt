@@ -1,0 +1,4 @@
+2022-09-10 17:16:09.5284|DEBUG|tp1.Program|No ingreso numero
+2022-09-10 17:16:12.3242|DEBUG|tp1.Program|No ingreso numero
+2022-09-10 17:16:13.9091|DEBUG|tp1.Program|error
+2022-09-10 17:16:17.6415|DEBUG|tp1.Program|No se pudo resolver

@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using NLog;
 
 namespace tp1
 {
     class empleado
     {
+        Logger logger = LogManager.GetCurrentClassLogger();
         private static float descuento = 0.15f;
 
         private string nombre;
@@ -100,6 +102,7 @@ namespace tp1
             }
             catch (Exception e)
             {
+                logger.Debug("No ingreso numero");
                 Console.WriteLine(e.Message);
             }
             return 0;
@@ -116,6 +119,7 @@ namespace tp1
             }
             catch (Exception e)
             {
+                logger.Debug("No ingreso numero");
                 Console.WriteLine(e.Message);
             }
             return 0; 
@@ -137,6 +141,7 @@ namespace tp1
             }
             catch(Exception e)
             {
+                logger.Debug("No ingreso numero");
                 Console.WriteLine(e.Message);
             }
             return 0;

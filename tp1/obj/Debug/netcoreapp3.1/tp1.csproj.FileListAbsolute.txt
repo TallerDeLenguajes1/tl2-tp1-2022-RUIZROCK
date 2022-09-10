@@ -12,3 +12,6 @@ C:\TallerII\tl2-tp1-2022-RUIZROCK\tp1\obj\Debug\netcoreapp3.1\tp1.csproj.CoreCom
 C:\TallerII\tl2-tp1-2022-RUIZROCK\tp1\obj\Debug\netcoreapp3.1\tp1.dll
 C:\TallerII\tl2-tp1-2022-RUIZROCK\tp1\obj\Debug\netcoreapp3.1\tp1.pdb
 C:\TallerII\tl2-tp1-2022-RUIZROCK\tp1\obj\Debug\netcoreapp3.1\tp1.genruntimeconfig.cache
+C:\TallerII\tl2-tp1-2022-RUIZROCK\tp1\bin\Debug\netcoreapp3.1\nlog.config
+C:\TallerII\tl2-tp1-2022-RUIZROCK\tp1\bin\Debug\netcoreapp3.1\NLog.dll
+C:\TallerII\tl2-tp1-2022-RUIZROCK\tp1\obj\Debug\netcoreapp3.1\tp1.csproj.CopyComplete

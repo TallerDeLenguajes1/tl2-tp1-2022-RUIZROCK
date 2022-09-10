@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Text.Json;
+using NLog;
 using System.Text.Json.Serialization;
 
 namespace tp1
@@ -11,77 +12,85 @@ namespace tp1
     {
         static void Main(string[] args)
         {
-            ////punto 2
-            ////problema 1
-            //Console.WriteLine("problema 1");
-            //try
-            //{
-            //    Console.WriteLine("Ingrese un numero");
-            //    int texto = Convert.ToInt32(Console.ReadLine());
-            //}
-            //catch (Exception)
-            //{
-            //    Console.WriteLine("Error");
-            //}
+            Logger logger = LogManager.GetCurrentClassLogger();
 
-            ////problema 2
-            //Console.WriteLine("\n\nproblema 2");
-            //try
-            //{
-            //    Console.WriteLine("Ingrese un numero.");
-            //    float dividendo = Convert.ToInt32(Console.ReadLine());
-            //    Console.WriteLine("Ingrese otro numero.");
-            //    float divisor = Convert.ToInt32(Console.ReadLine());
-            //    float total = dividendo / divisor;
-            //    Console.WriteLine("Total " + total);
-            //}
-            //catch (FormatException ex)
-            //{
-            //    Console.WriteLine(ex.Message);
-            //}
-            //catch (Exception)
-            //{
-            //    Console.WriteLine("error");
-            //}
+            //punto 2
+            //problema 1
+            Console.WriteLine("problema 1");
+            try
+            {
+                Console.WriteLine("Ingrese un numero");
+                int texto = Convert.ToInt32(Console.ReadLine());
+            }
+            catch (Exception)
+            {
+                logger.Debug("No ingreso numero");
+                Console.WriteLine("Error");
+            }
 
-            ////problema 3
-            //Console.WriteLine("\n\nproblema 3");
-            //try
-            //{
-            //    Console.WriteLine("Ingrese kilometros conducidos.");
-            //    float kilometros = Convert.ToInt32(Console.ReadLine());
-            //    Console.WriteLine("Ingrese litros usados.");
-            //    float litros = Convert.ToInt32(Console.ReadLine());
-            //    float total = kilometros / litros;
+            //problema 2
+            Console.WriteLine("\n\nproblema 2");
+            try
+            {
+                Console.WriteLine("Ingrese un numero.");
+                float dividendo = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Ingrese otro numero.");
+                float divisor = Convert.ToInt32(Console.ReadLine());
+                float total = dividendo / divisor;
+                Console.WriteLine("Total " + total);
+            }
+            catch (FormatException ex)
+            {
+                logger.Debug("No ingreso numero");
+                Console.WriteLine(ex.Message);
+            }
+            catch (Exception)
+            {
+                logger.Debug("Otro error");
+                Console.WriteLine("error");
+            }
 
-            //    Console.WriteLine("Total " + total);
-            //}
-            //catch(DivideByZeroException ex)
-            //{
-            //    Console.WriteLine(ex.Message);
-            //}
-            //catch (Exception)
-            //{
-            //    Console.WriteLine("error en los datos");
+            //problema 3
+            Console.WriteLine("\n\nproblema 3");
+            try
+            {
+                Console.WriteLine("Ingrese kilometros conducidos.");
+                float kilometros = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Ingrese litros usados.");
+                float litros = Convert.ToInt32(Console.ReadLine());
+                float total = kilometros / litros;
 
-            //}
+                Console.WriteLine("Total " + total);
+            }
+            catch (DivideByZeroException ex)
+            {
+                logger.Debug("division  por cero");
+                Console.WriteLine(ex.Message);
+            }
+            catch (Exception)
+            {
+                logger.Debug("error");
+                Console.WriteLine("error en los datos");
 
-            ////problema 4
-            //Console.WriteLine("\n\nproblema 4");
-            //Console.WriteLine("Lista de provincias obtenidas por una api");
-            //try
-            //{
-            //    List<Provincia> listaProvincias = apiJson();
+            }
 
-            //    foreach (var item in listaProvincias)
-            //    {
-            //        Console.WriteLine("id: {0} - nombre: {1}", item.Id, item.Nombre);
-            //    }
-            //}
-            //catch (Exception e)
-            //{
-            //    Console.WriteLine(e.Message);
-            //}
+            //problema 4
+            Console.WriteLine("\n\nproblema 4");
+            Console.WriteLine("Lista de provincias obtenidas por una api");
+            try
+            {
+                List<Provincia> listaProvincias = apiJson();
+
+                foreach (var item in listaProvincias)
+                {
+                    Console.WriteLine("id: {0} - nombre: {1}", item.Id, item.Nombre);
+                }
+            }
+            catch (Exception e)
+            {
+                logger.Debug("error de conexion");
+                Console.WriteLine(e.Message);
+            }
 
             //punto 3
             Console.WriteLine("\n\n\npunto  3");
@@ -207,6 +216,7 @@ namespace tp1
             }
             catch(Exception e)
             {
+                logger.Debug("No se pudo resolver");
                 Console.WriteLine(e.Message);
             }
 
